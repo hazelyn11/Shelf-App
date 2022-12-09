@@ -234,6 +234,10 @@ VALUES
 
 INSERT INTO bookReader
 VALUES
+('hazelyna11', '000000002', 'One of my favorites', 4, '2022-08-31');
+
+INSERT INTO bookReader
+VALUES
 ('ehutnick', '000000002', 'Good book', 5, '2022-09-30');
 
 INSERT INTO curBookReader
