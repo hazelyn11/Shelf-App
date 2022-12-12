@@ -12,5 +12,5 @@ This GitHub repo includes a .sql file with the database structure and preliminar
 
 Link to Demo Video:
 
-
+https://drive.google.com/file/d/1OyDWQ_tTARkXjEU_0BqVA2nd1deBGpRi/view?usp=sharing
 

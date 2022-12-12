@@ -246,10 +246,6 @@ VALUES
 
 INSERT INTO bookReader
 VALUES
-('hazelyna11', '100000004', 'Thought provoking', 4, '2022-08-31');
-
-INSERT INTO bookReader
-VALUES
 ('ehutnick', '100000002', 'Good book', 5, '2022-09-30');
 
 INSERT INTO curBookReader
@@ -340,5 +336,5 @@ INSERT INTO logEntry
 VALUES
 (01, 02, '2022-11-21', 80, 2, 'taking a break from midterms', '100000001');
 
-DELETE * FROM bookShelf;
+DELETE FROM bookShelf;
 
