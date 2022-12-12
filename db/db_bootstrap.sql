@@ -178,15 +178,19 @@ VALUES
 
 INSERT INTO book
 VALUES
-('000000001', 'Faber & Faber', '2018-08-30', 'Fiction', 'Normal People', 5.0);
+('100000001', 'Faber & Faber', '2018-08-30', 'Fiction', 'Normal People', 5.0);
 
 INSERT INTO book
 VALUES
-('000000002', 'Faber & Faber', '1994-09-24', 'Script', 'Arcadia', 5.0);
+('100000002', 'Faber & Faber', '1994-09-24', 'Script', 'Arcadia', 5.0);
 
 INSERT INTO book
 VALUES
-('000000003', 'Verso', '2022-05-03', 'Nonfiction/Manifesto', 'Internet for the People', 5.0);
+('100000003', 'Verso', '2022-05-03', 'Nonfiction/Manifesto', 'Internet for the People', 5.0);
+
+INSERT INTO book
+VALUES
+('100000004', 'Verso', '2022-05-03', 'Nonfiction/Manifesto', 'Test', 5.0);
 
 INSERT INTO readerFriends
 VALUES
@@ -230,47 +234,55 @@ VALUES
 
 INSERT INTO bookReader
 VALUES
-('hazelyna11', '000000001', 'I wrote a paper on this book for a class this semester!', 5, '2022-08-31');
+('hazelyna11', '100000001', 'I wrote a paper on this book for a class this semester!', 5, '2022-08-31');
 
 INSERT INTO bookReader
 VALUES
-('hazelyna11', '000000002', 'One of my favorites', 4, '2022-08-31');
+('hazelyna11', '100000002', 'One of my favorites', 4, '2022-08-31');
 
 INSERT INTO bookReader
 VALUES
-('ehutnick', '000000002', 'Good book', 5, '2022-09-30');
+('hazelyna11', '100000003', 'Thought provoking', 4, '2022-08-31');
+
+INSERT INTO bookReader
+VALUES
+('hazelyna11', '100000004', 'Thought provoking', 4, '2022-08-31');
+
+INSERT INTO bookReader
+VALUES
+('ehutnick', '100000002', 'Good book', 5, '2022-09-30');
 
 INSERT INTO curBookReader
 VALUES
-('eward99', '000000001', 112);
+('eward99', '100000001', 112);
 
 INSERT INTO curBookReader
 VALUES
-('eward99', '000000003', 78);
+('eward99', '100000003', 78);
 
 INSERT INTO bookAuthor
 VALUES
-('srooney', '000000001', 'I wrote this!');
+('srooney', '100000001', 'I wrote this!');
 
 INSERT INTO bookAuthor
 VALUES
-('tstoppard', '000000002', 'I wrote this!');
+('tstoppard', '100000002', 'I wrote this!');
 
 INSERT INTO bookAuthor
 VALUES
-('btarnoff', '000000003', 'I wrote this!');
+('btarnoff', '100000003', 'I wrote this!');
 
 INSERT INTO bookstoreBooks
 VALUES
-('000000001', 01, 15);
+('100000001', 01, 15);
 
 INSERT INTO bookstoreBooks
 VALUES
-('000000001', 02, 6);
+('100000001', 02, 6);
 
 INSERT INTO bookstoreBooks
 VALUES
-('000000001', 03, 10);
+('100000001', 03, 10);
 
 INSERT INTO shelf
 VALUES
@@ -282,35 +294,35 @@ VALUES
 
 INSERT INTO bookShelf
 VALUES
-(01, '000000001');
+(01, '100000001');
 
 INSERT INTO bookShelf
 VALUES
-(01, '000000002');
+(01, '100000002');
 
 INSERT INTO bookShelf
 VALUES
-(02, '000000001');
+(02, '100000001');
 
 INSERT INTO readerNote
 VALUES
-('hazelyna11', '000000001', 'one of my favorite books!');
+('hazelyna11', '100000001', 'one of my favorite books!');
 
 INSERT INTO readerNote
 VALUES
-('hazelyna11', '000000002', 'would like to reread this one soon');
+('hazelyna11', '100000002', 'would like to reread this one soon');
 
 INSERT INTO bookRating
 VALUES
-('000000001', 01, 5);
+('100000001', 01, 5);
 
 INSERT INTO bookRating
 VALUES
-('000000001', 02, 5);
+('100000001', 02, 5);
 
 INSERT INTO bookRating
 VALUES
-('000000002', 03, 5);
+('100000002', 03, 5);
 
 INSERT INTO readingLog
 VALUES
@@ -322,9 +334,11 @@ VALUES
 
 INSERT INTO logEntry
 VALUES
-(01, 01, '2022-11-21', 20, 1, 'excited to have more time to read over break!', '000000002');
+(01, 01, '2022-11-21', 20, 1, 'excited to have more time to read over break!', '100000002');
 
 INSERT INTO logEntry
 VALUES
-(01, 02, '2022-11-21', 80, 2, 'taking a break from midterms', '000000001');
+(01, 02, '2022-11-21', 80, 2, 'taking a break from midterms', '100000001');
+
+DELETE * FROM bookShelf;
 

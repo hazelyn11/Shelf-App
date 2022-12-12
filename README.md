@@ -1,25 +1,16 @@
-# MySQL + Flask Boilerplate Project
+# Shelf App Database Project
 
-This repo contains a boilerplate setup for spinning up 2 docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
+This project contains the database structure, as well as some preliminary data, for the Shelf App. Shelf allows users to track their reading habits, plan what to read next, and reflect on books they have already read, as well as find local independent bookstores, libraries, and events in their area. There are a few different user personas who benefit from using Shelf:
 
-## How to setup and start the containers
-**Important** - you need Docker Desktop installed
+1. Reader: This user can track their own reading habits and view friend reading habits, as well as create different “playlists” or “bookshelves”, grouping books with similar themes together.
 
-1. Clone this repository.  
-1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
-1. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the `webapp` user. 
-1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
-1. Build the images with `docker compose build`
-1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
+2. Author: This user is able to see rating information for their work, as well as average rating by year and by month.
 
-## For setting up a Conda Web-Dev environment:
+3. Bookstore: This user can publicize special events, like trivia nights or readings. If a reading features an Author, Bookstores will be able to indicate the Author in question. 
 
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
+This GitHub repo includes a .sql file with the database structure and preliminary data, as well as a views.py file with initial routes for the app's front end.
 
+Link to Demo Video:
 
 
 
